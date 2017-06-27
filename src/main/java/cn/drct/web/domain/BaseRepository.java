@@ -1,4 +1,4 @@
-package cn.gcks.web.domain;
+package cn.drct.web.domain;
 
 
 

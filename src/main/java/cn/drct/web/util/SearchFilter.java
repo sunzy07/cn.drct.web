@@ -1,4 +1,4 @@
-package cn.gcks.web.util;
+package cn.drct.web.util;
 
 import java.util.ArrayList;
 import java.util.HashMap;

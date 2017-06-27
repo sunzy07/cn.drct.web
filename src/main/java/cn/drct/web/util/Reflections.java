@@ -1,5 +1,5 @@
 
-package cn.gcks.web.util;
+package cn.drct.web.util;
 
 
 import java.lang.reflect.ParameterizedType;

@@ -1,4 +1,4 @@
-package cn.gcks.web.rest;
+package cn.drct.web.rest;
 
 
 import java.io.Serializable;
@@ -24,14 +24,15 @@ import org.springframework.web.bind.annotation.ResponseBody;
 
 
 
-import cn.gcks.web.domain.BaseRepository;
-import cn.gcks.web.Constant;
-import cn.gcks.web.WsResult;
-import cn.gcks.web.service.AbsService;
-import cn.gcks.web.util.DynamicSpecifications;
-import cn.gcks.web.util.Reflections;
-import cn.gcks.web.util.SearchFilter;
-import cn.gcks.web.util.RequestUtil;
+
+import cn.drct.web.Constant;
+import cn.drct.web.WsResult;
+import cn.drct.web.domain.BaseRepository;
+import cn.drct.web.service.AbsService;
+import cn.drct.web.util.DynamicSpecifications;
+import cn.drct.web.util.Reflections;
+import cn.drct.web.util.RequestUtil;
+import cn.drct.web.util.SearchFilter;
 @CrossOrigin
 public class AbsRest <T,K extends Serializable, R extends BaseRepository<T,K>,S extends AbsService<T, K, R>>  {
 	@Autowired

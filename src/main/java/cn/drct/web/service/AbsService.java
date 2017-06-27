@@ -1,4 +1,4 @@
-package cn.gcks.web.service;
+package cn.drct.web.service;
 
 import java.io.Serializable;
 import java.util.List;
@@ -11,8 +11,7 @@ import org.springframework.data.domain.Sort;
 import org.springframework.data.jpa.domain.Specification;
 import org.springframework.stereotype.Service;
 
-
-import cn.gcks.web.domain.BaseRepository;
+import cn.drct.web.domain.BaseRepository;
 
 @Service
 public abstract class AbsService<T,K extends Serializable,R extends BaseRepository<T,K>> {

@@ -1,4 +1,4 @@
-package cn.gcks.web.util;
+package cn.drct.web.util;
 
 import java.util.Enumeration;
 import java.util.Iterator;
