@@ -76,7 +76,8 @@ public class DynamicSpecifications {
 								break;
 							case IN:
 								if(filter.value instanceof Collection){
-									predicates.add(expression.in((Collection)filter.value));
+									if(((Collection)filter.value).size()>0)
+										predicates.add(expression.in((Collection)filter.value));
 								}else{
 									predicates.add(expression.in(filter.value));
 									
@@ -84,7 +85,8 @@ public class DynamicSpecifications {
 								break;
 							case NIN:
 								if(filter.value instanceof Collection){
-									predicates.add(builder.not(expression.in((Collection)filter.value)));
+									if(((Collection)filter.value).size()>0)
+										predicates.add(builder.not(expression.in((Collection)filter.value)));
 								}else{
 									predicates.add(builder.not(expression.in(filter.value)));
 									
