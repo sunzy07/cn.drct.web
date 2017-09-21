@@ -6,6 +6,8 @@ import java.util.List;
 import java.util.Map;
 import java.util.Map.Entry;
 
+import com.alibaba.fastjson.JSONArray;
+
 public class SearchFilter {
 
 	public enum Operator {
@@ -20,6 +22,13 @@ public class SearchFilter {
 		this.fieldName = fieldName;
 		this.value = value;
 		this.operator = operator;
+		if(operator == Operator.IN||operator == Operator.NIN){
+			 if(value instanceof String){
+				try{
+					this.value=JSONArray.parseArray(value.toString(), String.class);
+				}catch(Exception e){}
+			}
+		}
 	}
 
 	/**
